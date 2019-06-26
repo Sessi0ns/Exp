@@ -1,5 +1,5 @@
 #! Author:Sessi0ns
-#! Github:https://github.com/Sessi0ns/
+#! Github:https://github.com/Sessions/
 
 import re
 import base64
